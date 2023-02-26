@@ -1,0 +1,6 @@
+framework module Pods_PerqaraTest_PerqaraTestUITests {
+  umbrella header "Pods-PerqaraTest-PerqaraTestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

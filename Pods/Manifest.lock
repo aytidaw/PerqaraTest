@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.9.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - Realm (10.34.1):
+    - Realm/Headers (= 10.34.1)
+  - Realm/Headers (10.34.1)
+  - RealmSwift (10.34.1):
+    - Realm (= 10.34.1)
+  - SDWebImage (5.3.4):
+    - SDWebImage/Core (= 5.3.4)
+  - SDWebImage/Core (5.3.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - NVActivityIndicatorView (~> 4.8.0)
+  - RealmSwift
+  - SDWebImage (~> 5.3.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  Realm: fe824cd5b183cd55a50a6bcb4bce3ac1650e60b6
+  RealmSwift: c7f668f82982fc8b62366b78b8dc761f15141df6
+  SDWebImage: 295132e4da61a55c3cfd811a6dabf5d49d427706
+
+PODFILE CHECKSUM: 461a0c2eb63fb830c6569738b3ca07c1715494aa
+
+COCOAPODS: 1.11.3
