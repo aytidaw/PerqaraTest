@@ -24,6 +24,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabbarVC = TabbarViewController()
         window?.rootViewController = tabbarVC
         window?.makeKeyAndVisible()
+        
+        if #available(iOS 13.0, *) {
+            // Reference - https://stackoverflow.com/a/57899013/7316675
+            let statusBar = UIView(frame: window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero)
+            statusBar.backgroundColor = Constants.Colors.AppBaseDarkBlueColor.color()
+            window?.addSubview(statusBar)
+        } else {
+            UIApplication.shared.statusBarView?.backgroundColor = Constants.Colors.AppBaseDarkBlueColor.color()
+        }
 
     }
 

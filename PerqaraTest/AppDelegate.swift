@@ -19,6 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = tabbarVC
         window?.makeKeyAndVisible()
         
+        if #available(iOS 13.0, *) {
+            let statusBar = UIView(frame: window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero)
+            statusBar.backgroundColor = Constants.Colors.AppBaseDarkBlueColor.color()
+            window?.addSubview(statusBar)
+        } else {
+            UIApplication.shared.statusBarView?.backgroundColor = Constants.Colors.AppBaseDarkBlueColor.color()
+        }
+
+        
         return true
     }
 
